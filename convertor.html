@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="icon" type="image" href="./assets/images/COIN IT LOGO.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Coin $t</title>
+</head>
+<body class="bg-color" style="height: 150vh;">
+
+    <nav class="navbar navbar-light fixed-top" style="background-color: #c4c4c451;">
+        <div class="container-fluid">
+            
+          <a class="navbar-brand" href="#" style="font-weight: bold; color: azure;">
+            <img width="30" height="30" src="./assets/images/COIN IT LOGO.png">
+            Coin $t</a>
+
+            <button type="button" class="btn btn-outline-light fnto"
+          onclick="signUpSignIn()"
+            >التسجيل / الدخول</button>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="padding-top: 50px; width: 200px;  background-color: #c4c4c4;">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active fnto" aria-current="page" href="./index.html">الصفحة الرئيسية</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link fnto" href="./convertor.html" >محول العملات</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link loginbtn fnto" href="./livetracker.html" 
+                     >الإحصائيات المباشرة</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fnto" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      العملات
+                    </a>
+                    <ul  style="background-color: #c4c4c451;" class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li ><a class="dropdown-item fnto" href="./bitcoin.html">البتكوين</a></li>
+                      <li ><a class="dropdown-item fnto" href="./ethereum.html">الإيثيريوم</a></li>
+                      <li ><a class="dropdown-item fnto" href="./dogecoin.html">الدوج كوين</a></li>
+                      <li ><a class="dropdown-item fnto" href="./binance.html"> الباينانس </a></li>
+                    </ul>
+                </li>
+                    <!-- <div class="custom-control custom-switch mr-5">
+                      <input type="checkbox" class="custom-control-input" id="selector">
+                      <label class="custom-control-label" for="selector">Dark Mode</label>
+                    </div> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<p class="converP w3-animate-top">حول عملاتك من أي عملة رقمية الى أي عملية حقيقية </p>
+<div class="conver w3-animate-bottom">
+<!-- Crypto Converter ⚡ Widget -->
+<crypto-converter-widget shadow symbol live background-color="#383a59" border-radius="0.60rem" fiat="kuwaiti-dinar" crypto="bitcoin" amount="1" decimal-places="2"></crypto-converter-widget>
+<script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script>
+<!-- /Crypto Converter ⚡ Widget -->
+</div>
+
+
+<div class="crypto2crypto" style="
+   
+    background-color: #c4c4c451; 
+    width: 100%; 
+    /* height: 90vh; */
+
+">
+<div class="no1">
+
+    <p class="conver2P">حول عملاتك من عملة رقمية  <br>الى عملية رقمية </p>
+</div>
+<div class="no2">
+
+    <div style="width: 300px; height:335px; background-color: #232937; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:335px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;margin: 0;width: 300px;padding:1px;padding: 0px; margin: 0px;">
+        <div style="height:315px; padding:0px; margin:0px; width: 100%;">
+            <iframe src="https://widget.coinlib.io/widget?type=converter&theme=dark" width="300" height="310px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;">
+            </iframe>
+        </div>
+</div>
+
+
+</div>
+
+<!-- الدخول -->
+<div id="signing" >
+
+<div class="main">
+  <input type="checkbox" id="chk" aria-hidden="true">
+  <div class="signup">
+  <form>
+  <label class="Lbl fnto" for="chk" aria-hidden="true" style="text-align: center;"> كن فرداً من عائلتنا </label>
+  <input id="SUusrName" class="inpt" type="text" name="txt" placeholder="اسم المستخدم" required >
+  <input id="SUemail" class="inpt" type="email" name="email" placeholder="البريد الإلكتروني" required>
+  <input id="Pswrd" class="inpt" type="password" name="pswd" placeholder="كلمة السر" required>
+  <button id="sighUp" class="buttn fnto">سجّل</button>
+  </form>    
+  </div>
+  <div class="login">
+  <form>
+  <label class="Lbl fnto" for="chk" aria-hidden="true">تسجيل الدخول</label>
+  <input id="LogEmail" class="inpt" type="email" name="email" placeholder="البريد الإلكتروني" required>
+  <input id="LogPswrd" class="inpt" type="password" name="pswd" placeholder="كلمة السر" required>
+  <button id="login" class="buttn fnto" 
+  onclick="window.location.href='bitcoin.html'"
+  >تسجيل الدخول</button>
+</div>
+<!-- نهاية الدخول  -->
+
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+       
+
+</body>
+</html>
