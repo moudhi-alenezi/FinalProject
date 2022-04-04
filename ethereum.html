@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="icon" type="image" href="./assets/images/COIN IT LOGO.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Coin $t</title>
+</head>
+<body class="bg-color" style="height: 200vh;">
+
+    <nav class="navbar navbar-light fixed-top" style="background-color: #c4c4c451;">
+        <div class="container-fluid">
+            
+          <a class="navbar-brand" href="#" style="font-weight: bold; color: azure;">
+            <img width="30" height="30" src="./assets/images/COIN IT LOGO.png">
+            Coin $t</a>
+
+            <button type="button" class="btn btn-outline-light fnto"
+          onclick="signUpSignIn()"
+            >التسجيل / الدخول</button>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="padding-top: 50px; width: 200px;  background-color: #c4c4c4;">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active fnto" aria-current="page" href="./index.html">الصفحة الرئيسية</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link fnto" href="./convertor.html" >محول العملات</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link loginbtn fnto" href="./livetracker.html" 
+                     >الإحصائيات المباشرة</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fnto" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      العملات
+                    </a>
+                    <ul  style="background-color: #c4c4c451;" class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li ><a class="dropdown-item fnto" href="./bitcoin.html">البتكوين</a></li>
+                      <li ><a class="dropdown-item fnto" href="./ethereum.html">الإيثيريوم</a></li>
+                      <li ><a class="dropdown-item fnto" href="./dogecoin.html">الدوج كوين</a></li>
+                      <li ><a class="dropdown-item fnto" href="./binance.html"> الباينانس </a></li>
+                    </ul>
+                </li>
+
+                    <!-- <div class="custom-control custom-switch mr-5">
+                      <input type="checkbox" class="custom-control-input" id="selector">
+                      <label class="custom-control-label" for="selector">Dark Mode</label>
+                    </div> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="coinb">
+          <div class="coinImg">
+              <img class="coinImgg" src="./assets/images/ETH.png" >
+          </div>
+          <div class="coinName">
+              <h1 class="namec"> الإيــثــيريــوم </h1>
+          </div>
+      </div>
+<div class="LivPrc">
+<!-- Cryptocurrency Price Widget -->
+<script>!function(){
+    var e=document.getElementsByTagName("script"),
+    t=e[e.length-1],
+    n=document.createElement("script");
+    function r(){
+        var e=crCryptocoinPriceWidget.init({
+            base:"KWD,SAR,AED,QAR",
+            items:"ETH",
+            backgroundColor:"63016045",
+            streaming:"1",
+            striped:"1",
+            rounded:"1",
+            boxShadow:"1",
+            border:"1"});
+            t.parentNode.insertBefore(e,t)}
+            n.src="https://co-in.io/widget/pricelist.js?items=ETH",
+            n.async=!0,
+            n.readyState?n.onreadystatechange=function(){
+                "loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},
+                t.parentNode.insertBefore(n,null)}();
+                </script>
+                <!-- /Cryptocurrency Price Widget -->
+</div>
+
+<div class="coincharti">
+    <div style="height:70.5vh; overflow:hidden; box-sizing: border-box; border: 1px solid;  border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; padding:1px;padding: 0px; margin: 0px; width: 150vh;">
+        <div style="height:70vh; padding:0px; margin:0px; width: 150vh;">
+            <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=145&pref_coin_id=3307" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;">
+            </iframe>
+        </div>
+        </div>
+</div>
+
+<!-- الدخول -->
+<div id="signing" >
+
+<div class="main">
+  <input type="checkbox" id="chk" aria-hidden="true">
+  <div class="signup">
+  <form>
+  <label class="Lbl fnto" for="chk" aria-hidden="true" style="text-align: center;"> كن فرداً من عائلتنا </label>
+  <input id="SUusrName" class="inpt" type="text" name="txt" placeholder="اسم المستخدم" required >
+  <input id="SUemail" class="inpt" type="email" name="email" placeholder="البريد الإلكتروني" required>
+  <input id="Pswrd" class="inpt" type="password" name="pswd" placeholder="كلمة السر" required>
+  <button id="sighUp" class="buttn fnto">سجّل</button>
+  </form>    
+  </div>
+  <div class="login">
+  <form>
+  <label class="Lbl fnto" for="chk" aria-hidden="true">تسجيل الدخول</label>
+  <input id="LogEmail" class="inpt" type="email" name="email" placeholder="البريد الإلكتروني" required>
+  <input id="LogPswrd" class="inpt" type="password" name="pswd" placeholder="كلمة السر" required>
+  <button id="login" class="buttn fnto" 
+  onclick="window.location.href='bitcoin.html'"
+  >تسجيل الدخول</button>
+</div>
+<!-- نهاية الدخول  -->
+
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+
+
+   
+    <script type="module">
+ 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+       import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+       import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+ 
+       // TODO: Add SDKs for Firebase products that you want to use
+       // https://firebase.google.com/docs/web/setup#available-libraries
+     
+       // Your web app's Firebase configuration
+       const firebaseConfig = {
+         apiKey: "AIzaSyBXuXy2We8QX7TbT7xkKhL3SKxOV_hMMog",
+         authDomain: "coin-it-auth.firebaseapp.com",
+         databaseURL: "https://coin-it-auth-default-rtdb.firebaseio.com",
+         projectId: "coin-it-auth",
+         storageBucket: "coin-it-auth.appspot.com",
+         messagingSenderId: "867005066674",
+         appId: "1:867005066674:web:3054ff0cbf769a23f308ab"
+       };
+     
+       // Initialize Firebase
+       const app = initializeApp(firebaseConfig);
+       const database =getDatabase(app);
+       const auth = getAuth();
+ 
+       
+ signUp.addEventListener('click',(e) => {
+ 
+ var email = document.getElementById('SUemail').value;
+ var password = document.getElementById('Pswrd').value;
+ var username = document.getElementById('SUusrName').value;
+ 
+ createUserWithEmailAndPassword(auth, email, password)
+   .then((userCredential) => {
+    // Signed in 
+     const user = userCredential.user;
+     alert(`شكرا${username} لانضمامك لـ Coin $t`);
+     window.open("signing.html",'_self');
+     set(ref(database, 'users/' + user.uid),{
+         username: username,
+         email: email
+     })
+   })
+ });
+ login.addEventListener('click',(e)=>{
+  var email = document.getElementById('LogEmail').value;
+  var password = document.getElementById('LogPswrd').value;
+ 
+     signInWithEmailAndPassword(auth, email, password)
+     .then((userCredential) => {
+       // Signed in 
+       const user = userCredential.user;
+ 
+       const dt = new Date();
+        update(ref(database, 'users/' + user.uid),{
+         last_login: dt,
+       })
+ 
+        alert('مرحبا بك');
+     })
+ });
+ const user = auth.currentUser;
+ onAuthStateChanged(auth, (user) => {
+ if (user) {
+   const uid = user.uid;
+ }});
+ 
+ logout.addEventListener('click',(e)=>{
+ 
+  signOut(auth).then(() => {
+    alert('نراك في المرة القادمة');
+  }).catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+       alert(errorMessage);
+  });
+ }); 
+    </script>
+   
+</body>
+</html>

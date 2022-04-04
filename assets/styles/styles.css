@@ -236,7 +236,7 @@ cards {
 .dogecoin {
     box-shadow: 10px 10px 20px 1px rgba(247,147,26,.15);
 }
-
+banner
 
 .asset-info {
     grid-area: info;
@@ -330,3 +330,78 @@ margin-top: 20vh;
     padding: 5px;
     margin-top: 20vh;
     }
+
+    .coinb {
+        margin-top: 20vh; 
+        background-color: #c4c4c451; 
+        width: 100%; 
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .namec{
+        font-family: 'Tajawal', sans-serif;
+color: #e0dede;
+font-size: 80px;
+font-weight: 700;
+text-align: right;
+margin-top: 100px;
+
+    }
+
+    .coinImg {
+        height: 40vh;
+        width: 40vh;
+        background-color: #491c5eaf;
+        border-radius: 50%;
+        margin-top: 30px;
+    }
+    .coinImgg {
+        height: 35vh;
+        width: 35vh;
+margin: 15px; 
+}
+.LivPrc {
+    width: 80vh;
+margin-top: 10vh;
+margin-left: 70vh;
+height: 2vh;
+}
+
+.coincharti {
+    background-color: #51036763;
+    height: 80vh;
+    width: 100%;
+    margin-top: 25vh;
+   display: flex;
+   justify-content: center;
+   padding-top: 30px;
+}
+
+.coinzbnr {
+    background-color: #e0dede7d;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.crd {
+    height: 30vh;
+    width: 30vh;
+    background-color: #005A7D45;
+    align-items: center;
+margin: 12vh;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+}
+
+.crdimg {
+    height: 25vh;
+    width: 25vh;
+    
+}
