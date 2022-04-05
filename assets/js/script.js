@@ -1,3 +1,7 @@
+
+
+
+
 // $(document).ready(function(){
 //     $("#selector").change(function(){
 //       $("body").toggleClass("bg-secondary");
@@ -448,5 +452,34 @@ async function updateEthereumPrice() {
   printBinanceChart()
   printEthereumChart()
   printDogeChart()
+
+ 
+ 
+
+  function signUp(event) {
+  event.preventDefault()
+  var btn1 = document.getElementById("btn1");
+  var btn2 = document.getElementById("btn2");
+  var username = document.getElementById("SUusrName").value;
+  var page = document.getElementById("signing");
+  alert(" شكرا لإنضمامك لـ كوين إت  "+ username);
+  btn1.className= 'btn btn-outline-light fnto d-none';
+  btn2.className= 'btn btn-outline-danger fnto d-block';
+  page.style.display = "none";
+  return false;
+  }
+
+  function signOut(event) {
+    event.preventDefault()
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var username = document.getElementById("SUusrName").value;
+    var page = document.getElementById("signing");
+    alert('نراك في المرة القادمة '+ username);
+    btn1.className= 'btn btn-outline-light fnto d-block';
+    btn2.className= 'btn btn-outline-danger fnto d-none';
+    return false;
+    } 
+    
 
  
