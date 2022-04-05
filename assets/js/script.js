@@ -482,4 +482,14 @@ async function updateEthereumPrice() {
     } 
     
 
- 
+    function signIn(event) {
+      event.preventDefault()
+      var btn1 = document.getElementById("btn1");
+      var btn2 = document.getElementById("btn2");
+      var page = document.getElementById("signing");
+      alert("مرحبا بك مجددا");
+      btn1.className= 'btn btn-outline-light fnto d-none';
+      btn2.className= 'btn btn-outline-danger fnto d-block';
+      page.style.display = "none";
+      return false;
+      }
